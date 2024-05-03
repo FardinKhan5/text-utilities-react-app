@@ -23,7 +23,7 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path='/' element={<><Navbar title="Text-Utilities-React-App" mode={mode} toggleMode={toggleMode} />
             <Textutils mode={mode} /></>} />
